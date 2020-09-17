@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Vue.js (vuetify) and Blend4Web (blender 2.79)</title>
+
+<meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/@mdi/font@5.x/css/materialdesignicons.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+
+<link rel="stylesheet" href="project_b4w_vuetify.css" type="text/css">
+
+<script type="text/javascript" src="../../dist/b4w.js"></script>
+<!-- <script type="text/javascript" src="XXXXXXXXXXXX/blend3dweb_test_vue/build/b4w.simple.min.js"></script>-->
+<script type="text/javascript" src="project_b4w_vuetify.js"></script>
+
+</head>
+
+<body>
+  <div id="app">
+    <v-app id="inspire">
+      <v-app id="inspire">
+        <v-navigation-drawer
+          v-model="drawer"
+          app
+        >
+        <!-- <v-row align="center">
+          <v-row justify="space-around">
+            <v-switch v-model="accordion" class="ma-2" label="Accordion"></v-switch>
+            <v-switch v-model="popout" class="ma-2" label="Popout"></v-switch>
+            <v-switch v-model="inset" class="ma-2" label="Inset"></v-switch>
+            <v-switch v-model="multiple" class="ma-2" label="Multiple"></v-switch>
+            <v-switch v-model="disabled" class="ma-2" label="Disabled"></v-switch>
+            <v-switch v-model="readonly" class="ma-2" label="Readonly"></v-switch>
+            <v-switch v-model="focusable" class="ma-2" label="Focusable"></v-switch>
+            <v-switch v-model="flat" class="ma-2" label="Flat"></v-switch>
+            <v-switch v-model="hover" class="ma-2" label="Hover"></v-switch>
+            <v-switch v-model="tile" class="ma-2" label="Tile"></v-switch>
+          </v-row>
+
+          <v-expansion-panels
+            :accordion="accordion"
+            :popout="popout"
+            :inset="inset"
+            :multiple="multiple"
+            :focusable="focusable"
+            :disabled="disabled"
+            :readonly="readonly"
+            :flat="flat"
+            :hover="hover"
+            :tile="tile"
+          >
+                  <v-expansion-panel>
+                    <v-expansion-panel-header>b4w</v-expansion-panel-header>
+                    <v-expansion-panel-content>
+                      Проекты на движке blend4web
+                      <div class="my-2">
+                        <v-btn small color="primary" id="scene1">Primary</v-btn>
+                      </div>
+                      <div class="my-2">
+                        <v-btn small color="primary" id="scene2">Primary</v-btn>
+                      </div>
+                      <div class="my-2">
+                        <v-btn small color="primary" id="scene3">Primary</v-btn>
+                      </div>
+                    </v-expansion-panel-content>
+                  </v-expansion-panel>
+                  <v-expansion-panel>
+                      <v-expansion-panel-header>v3d</v-expansion-panel-header>
+                      <v-expansion-panel-content>
+                        Проекты на движке verge3d
+                        <div class="my-2">
+                          <v-btn small color="primary">Primary</v-btn>
+                        </div>
+                      </v-expansion-panel-content>
+                    </v-expansion-panel>
+          </v-expansion-panels>
+        </v-row> -->
+        <div class="my-2">
+          <v-btn small color="primary" id="scene1">Primary</v-btn>
+        </div>
+        <div class="my-2">
+          <v-btn small color="primary" id="scene2">Primary</v-btn>
+        </div>
+        <div class="my-2">
+          <v-btn small color="primary" id="scene3">Primary</v-btn>
+        </div>
+        </v-navigation-drawer>
+
+        <v-app-bar
+          app
+          color="indigo"
+          dark
+        >
+          <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
+          <v-toolbar-title>blend3dweb</v-toolbar-title>
+        </v-app-bar>
+
+        <v-main>
+          <v-container
+            class="fill-height"
+            fluid
+          >
+            <v-row
+              align="center"
+              justify="center"
+            >
+            <!-- the scene inside vuejs -->
+              <div id="main_canvas_container"></div>
+            </v-row>
+          </v-container>
+        </v-main>
+
+        <v-footer
+          color="indigo"
+          app
+        >
+          <span class="white--text">&copy; {{ new Date().getFullYear() }}</span>
+        </v-footer>
+      </v-app>
+    </v-app>
+  </div>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
+<!-- <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script> -->
+<script>
+new Vue({
+  el: '#app',
+  vuetify: new Vuetify(),
+  props: {
+    source: String,
+  },
+  data: () => ({
+    drawer: null,
+    accordion: false,
+    popout: false,
+    inset: false,
+    multiple: false,
+    disabled: false,
+    readonly: false,
+    focusable: false,
+    flat: false,
+    hover: false,
+    tile: false,
+  }),
+})
+</script>
+  <!-- <div id="main_canvas_container"></div> -->
+  <script type='text/javascript'>
+    (function () {
+        window['yandexChatWidgetCallback'] = function() {
+            try {
+                window.yandexChatWidget = new Ya.ChatWidget({
+                    guid: 'd5fb9900-3d84-928d-587c-af0d6fbf4896',
+                    buttonText: 'Чат Blend3DWeb',
+                    title: 'Чат',
+                    theme: 'light',
+                    collapsedDesktop: 'hover',
+                    collapsedTouch: 'never'
+                });
+            } catch(e) { }
+        };
+        var n = document.getElementsByTagName('script')[0],
+            s = document.createElement('script');
+        s.async = true;
+        s.charset = 'UTF-8';
+        s.src = 'https://yastatic.net/s3/chat/widget.js';
+        n.parentNode.insertBefore(s, n);
+    })();
+    </script>
+</body>
+
+</html>
