@@ -8,8 +8,8 @@ Required programs and conditions
 
 Manjaro OS (win10 - you have to try, but there are few differences)
 
-Download and run blender 2.79 (link), download and add blend4web add-on (link).
-Vuejs code based on vuetify
+Download and run blender 2.79 (https://download.blender.org/release/Blender2.79/), download and add blend4web add-on (https://www.blend4web.com/en/downloads/).
+Vuejs code based on vuetify (https://vuetifyjs.com/)
 
 Sequencing
 
@@ -40,16 +40,16 @@ RU
 
 ОС Manjaro ( win10 — надо пробовать, но отличий мало)
 
-Скачайте и запустите  программу blender 2.79 (ссылка),  скачайте и добавьте аддон blend4web (ссылка).
-Код vuejs на базе vuetify
+Скачайте и запустите  программу blender 2.79 (https://download.blender.org/release/Blender2.79/),  скачайте и добавьте аддон blend4web (https://www.blend4web.com/en/downloads/).
+Код vuejs на базе vuetify (https://vuetifyjs.com/)
 
 Последовательность действий
 
 Дальше два пути, вы можете скачать данный проект и установить локально рядом с другими вашими проектами. Или участвовать в разработке, подключившись к проекту через github.
 
-В программе blender меняем движок BI на B4W.  Запускается сервер разработки и вы переходите в менеджер проектов.  При переходе на страницу .html, вы можете видеть как работает vue и blend4web. В проект добавлена возможность динамически менять проекты, не перегружая страницу. 
+В программе blender меняем движок BI на B4W.  Запускается сервер разработки и вы переходите в менеджер проектов.  При переходе на страницу .html, вы можете видеть как работает vue и blend4web. В проект добавлена возможность динамически менять проекты, не перегружая страницу.
 
-Последнее сделано не просто так. Цель данных экспериментов: сделать возможным, как и vuejs, реактивно работать с 3d объектами, разными сценами, а также разными движками webgl. 
+Последнее сделано не просто так. Цель данных экспериментов: сделать возможным, как и vuejs, реактивно работать с 3d объектами, разными сценами, а также разными движками webgl.
 
 Для размещения на сервере, читайте комментарии в файле .html и меняйте ссылки.  Build b4w работает некорректно ( зависимости, в которых нужно разбираться).
 Для работы на сервере нужен только файл simple
@@ -61,14 +61,5 @@ RU
 
 Если будут вопросы:
 blend3dweb@gmail.com (если ответ не срочный)
-https://discord.gg/2mk7Hy5 
+https://discord.gg/2mk7Hy5
 ЛС на сайте: https://www.blend3dweb.ru/
-
-
-
- 
-
-
-
-
-
