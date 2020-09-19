@@ -22,7 +22,7 @@ Change the BI engine to B4W in blender. The development server starts and you go
 The latter was done for a reason. The purpose of these experiments: to make it possible, like vuejs, to work reactively with 3d objects, different scenes, as well as different webgl engines.
 
 For server posting, read comments in the .html file and change links. Build b4w does not work correctly (dependencies that need to be dealt with).
-To work on the server you need all files except .html
+To work on the server, you need all the files in the build folder, except for .html
 
 In the near future:
 testing the code in separate .vue files
@@ -55,7 +55,7 @@ RU
 Последнее сделано не просто так. Цель данных экспериментов: сделать возможным, как и vuejs, реактивно работать с 3d объектами, разными сценами, а также разными движками webgl.
 
 Для размещения на сервере, читайте комментарии в файле .html и меняйте ссылки.  Build b4w работает некорректно ( зависимости, в которых нужно разбираться).
-Для работы на сервере нужны все файлы, кроме .html
+Для работы на сервере нужны все файлы в папке build, кроме .html
 
 В ближайших планах:
 тестирование работы  кода в отдельных файлах .vue
