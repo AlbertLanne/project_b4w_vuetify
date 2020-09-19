@@ -25,9 +25,9 @@ For server posting, read comments in the .html file and change links. Build b4w 
 To work on the server, you need all the files in the build folder, except for .html
 
 In the near future:
-testing the code in separate .vue files
-temporarily blocking project buttons when dynamically loading scenes (looking for a vuejs variant)
-replacement of canvas when switching to the side menu of another engine (b4w - json, verge3d / threejs - glTF)
+testing the code in separate .vue files,
+temporarily blocking project buttons when dynamically loading scenes (looking for a vuejs variant),
+replacement of canvas when switching to the side menu of another engine (b4w - json, verge3d / threejs - glTF).
 
 If you have any questions:
 blend3dweb@gmail.com (unless the answer is urgent)
@@ -58,9 +58,9 @@ RU
 Для работы на сервере нужны все файлы в папке build, кроме .html
 
 В ближайших планах:
-тестирование работы  кода в отдельных файлах .vue
-временное блокирование кнопок проектов при динамической загрузке  сцен (ищу вариант  vuejs)
-замена канвас при переходе на боковое меню другого движка ( b4w — json, verge3d/threejs — glTF)
+тестирование работы  кода в отдельных файлах .vue,
+временное блокирование кнопок проектов при динамической загрузке  сцен (ищу вариант  vuejs),
+замена канвас при переходе на боковое меню другого движка ( b4w — json, verge3d/threejs — glTF).
 
 Если будут вопросы:
 blend3dweb@gmail.com (если ответ не срочный)
