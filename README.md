@@ -1,6 +1,8 @@
 # project_b4w_vuetify
 Vue.js (vuetify) and Blend4Web (blender 2.79)
+
 EN
+
 The project was created as an experimental platform for testing vue.js and blend4web.
 Code comments will supplement general information about the project. So, let's begin..
 
@@ -33,6 +35,7 @@ https://discord.gg/2mk7Hy5
 PM on the website: https://www.blend3dweb.ru/
 
 RU
+
 Проект создан, как экспериментальная площадка для проверки работы vue.js и  blend4web.
 Комментарии к коду будут дополнять  общую информацию о проекте. Итак начнём..
 
