@@ -22,105 +22,99 @@
 <body>
   <div id="app">
     <v-app id="inspire">
-      <v-app id="inspire">
-        <v-navigation-drawer
-          v-model="drawer"
-          app
+      <v-navigation-drawer
+        v-model="drawerRight"
+        app
+        clipped
+        right
+      >
+        <v-list dense>
+          <v-list-item @click.stop="right = !right">
+            <v-list-item-action>
+              <v-icon>mdi-exit-to-app</v-icon>
+            </v-list-item-action>
+            <v-list-item-content>
+              <v-list-item-title>Open Temporary Drawer</v-list-item-title>
+            </v-list-item-content>
+          </v-list-item>
+          <div class="my-2">
+            <v-btn small color="primary" id="scene1">Scene1</v-btn>
+          </div>
+          <div class="my-2">
+            <v-btn small color="primary" id="scene2">Scene2</v-btn>
+          </div>
+          <div class="my-2">
+            <v-btn small color="primary" id="scene3">Scene3</v-btn>
+          </div>
+        </v-list>
+      </v-navigation-drawer>
+
+      <v-app-bar
+        app
+        clipped-right
+        color="blue-grey"
+        dark
+      >
+        <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
+        <v-toolbar-title>Toolbar</v-toolbar-title>
+        <v-spacer></v-spacer>
+        <v-app-bar-nav-icon @click.stop="drawerRight = !drawerRight"></v-app-bar-nav-icon>
+      </v-app-bar>
+
+      <v-navigation-drawer
+        v-model="drawer"
+        app
+      >
+        <v-list dense>
+          <v-list-item @click.stop="left = !left">
+            <v-list-item-action>
+              <v-icon>mdi-exit-to-app</v-icon>
+            </v-list-item-action>
+            <v-list-item-content>
+              <v-list-item-title>Open Temporary Drawer</v-list-item-title>
+            </v-list-item-content>
+          </v-list-item>
+        </v-list>
+      </v-navigation-drawer>
+
+      <v-navigation-drawer
+        v-model="left"
+        fixed
+        temporary
+      ></v-navigation-drawer>
+
+      <v-main>
+        <v-container
+          class="fill-height"
+          fluid
         >
-        <!-- <v-row align="center">
-          <v-row justify="space-around">
-            <v-switch v-model="accordion" class="ma-2" label="Accordion"></v-switch>
-            <v-switch v-model="popout" class="ma-2" label="Popout"></v-switch>
-            <v-switch v-model="inset" class="ma-2" label="Inset"></v-switch>
-            <v-switch v-model="multiple" class="ma-2" label="Multiple"></v-switch>
-            <v-switch v-model="disabled" class="ma-2" label="Disabled"></v-switch>
-            <v-switch v-model="readonly" class="ma-2" label="Readonly"></v-switch>
-            <v-switch v-model="focusable" class="ma-2" label="Focusable"></v-switch>
-            <v-switch v-model="flat" class="ma-2" label="Flat"></v-switch>
-            <v-switch v-model="hover" class="ma-2" label="Hover"></v-switch>
-            <v-switch v-model="tile" class="ma-2" label="Tile"></v-switch>
+          <v-row
+            justify="center"
+            align="center"
+          >
+          <!-- the scene inside vuejs -->
+      <div id="main_canvas_container"></div>
+
           </v-row>
+        </v-container>
+      </v-main>
 
-          <v-expansion-panels
-            :accordion="accordion"
-            :popout="popout"
-            :inset="inset"
-            :multiple="multiple"
-            :focusable="focusable"
-            :disabled="disabled"
-            :readonly="readonly"
-            :flat="flat"
-            :hover="hover"
-            :tile="tile"
-          >
-                  <v-expansion-panel>
-                    <v-expansion-panel-header>b4w</v-expansion-panel-header>
-                    <v-expansion-panel-content>
-                      Проекты на движке blend4web
-                      <div class="my-2">
-                        <v-btn small color="primary" id="scene1">Primary</v-btn>
-                      </div>
-                      <div class="my-2">
-                        <v-btn small color="primary" id="scene2">Primary</v-btn>
-                      </div>
-                      <div class="my-2">
-                        <v-btn small color="primary" id="scene3">Primary</v-btn>
-                      </div>
-                    </v-expansion-panel-content>
-                  </v-expansion-panel>
-                  <v-expansion-panel>
-                      <v-expansion-panel-header>v3d</v-expansion-panel-header>
-                      <v-expansion-panel-content>
-                        Проекты на движке verge3d
-                        <div class="my-2">
-                          <v-btn small color="primary">Primary</v-btn>
-                        </div>
-                      </v-expansion-panel-content>
-                    </v-expansion-panel>
-          </v-expansion-panels>
-        </v-row> -->
-        <div class="my-2">
-          <v-btn small color="primary" id="scene1">Primary</v-btn>
-        </div>
-        <div class="my-2">
-          <v-btn small color="primary" id="scene2">Primary</v-btn>
-        </div>
-        <div class="my-2">
-          <v-btn small color="primary" id="scene3">Primary</v-btn>
-        </div>
-        </v-navigation-drawer>
+      <v-navigation-drawer
+        v-model="right"
+        fixed
+        right
+        temporary
+      ></v-navigation-drawer>
 
-        <v-app-bar
-          app
-          color="indigo"
-          dark
-        >
-          <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
-          <v-toolbar-title>blend3dweb</v-toolbar-title>
-        </v-app-bar>
-
-        <v-main>
-          <v-container
-            class="fill-height"
-            fluid
-          >
-            <v-row
-              align="center"
-              justify="center"
-            >
-            <!-- the scene inside vuejs -->
-              <div id="main_canvas_container"></div>
-            </v-row>
-          </v-container>
-        </v-main>
-
-        <v-footer
-          color="indigo"
-          app
-        >
-          <span class="white--text">&copy; {{ new Date().getFullYear() }}</span>
-        </v-footer>
-      </v-app>
+      <v-footer
+        app
+        color="blue-grey"
+        class="white--text"
+      >
+        <span>Vuetify</span>
+        <v-spacer></v-spacer>
+        <span>&copy; {{ new Date().getFullYear() }}</span>
+      </v-footer>
     </v-app>
   </div>
 <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
@@ -135,42 +129,13 @@ new Vue({
   },
   data: () => ({
     drawer: null,
-    accordion: false,
-    popout: false,
-    inset: false,
-    multiple: false,
-    disabled: false,
-    readonly: false,
-    focusable: false,
-    flat: false,
-    hover: false,
-    tile: false,
+    drawerRight: null,
+    right: false,
+    left: false,
   }),
 })
 </script>
   <!-- <div id="main_canvas_container"></div> -->
-  <script type='text/javascript'>
-    (function () {
-        window['yandexChatWidgetCallback'] = function() {
-            try {
-                window.yandexChatWidget = new Ya.ChatWidget({
-                    guid: 'd5fb9900-3d84-928d-587c-af0d6fbf4896',
-                    buttonText: 'Чат Blend3DWeb',
-                    title: 'Чат',
-                    theme: 'light',
-                    collapsedDesktop: 'hover',
-                    collapsedTouch: 'never'
-                });
-            } catch(e) { }
-        };
-        var n = document.getElementsByTagName('script')[0],
-            s = document.createElement('script');
-        s.async = true;
-        s.charset = 'UTF-8';
-        s.src = 'https://yastatic.net/s3/chat/widget.js';
-        n.parentNode.insertBefore(s, n);
-    })();
-    </script>
 </body>
 
 </html>

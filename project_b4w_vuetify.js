@@ -46,7 +46,7 @@ exports.init = function() {
 }
 
 /**
- * callback executed when the app is initialized 
+ * callback executed when the app is initialized
  */
 function init_cb(canvas_elem, success) {
 
