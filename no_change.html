@@ -1,0 +1,35 @@
+
+               <v-navigation-drawer
+          v-model="drawer"
+          app
+        >
+        <div class="my-2">
+          <v-btn small color="primary" id="scene1">Scene1</v-btn>
+        </div>
+        <div class="my-2">
+          <v-btn small color="primary" id="scene2">Scene2</v-btn>
+        </div>
+        <div class="my-2">
+          <v-btn small color="primary" id="scene3">Scene3</v-btn>
+        </div>
+        </v-navigation-drawer>
+
+
+
+
+
+
+        <v-main>
+          <v-container
+            class="fill-height"
+            fluid
+          >
+            <v-row
+              align="center"
+              justify="center"
+            >
+            <!-- the scene inside vuejs -->
+              <div id="main_canvas_container"></div>
+            </v-row>
+          </v-container>
+        </v-main>

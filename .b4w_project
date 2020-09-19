@@ -1,6 +1,6 @@
 [info]
 author = blend3dweb.ru
-icon = 
+icon =
 name = project_b4w_vuetify
 title = Vue.js (vuetify) and Blend4Web (blender 2.79)
 
@@ -9,20 +9,25 @@ assets_dirs = projects/project_b4w_vuetify/assets;
 blend_dirs = projects/project_b4w_vuetify/blender;
 blender_exec = /home/blend3dweb/blender-2.79b-linux-glibc219-x86_64/blender
 build_dir = projects/project_b4w_vuetify/build
-deploy_dir = 
+deploy_dir =
 
 [compile]
-apps = 
-css_ignore = 
+apps =
+css_ignore =
 engine_type = copy
-ignore = 
-js_ignore = 
-optimization = simple
+ignore =
+js_ignore =
+optimization = advanced
 use_physics = True
+build_cmd =
 
 [deploy]
 assets_path_dest = assets
 assets_path_prefix = assets
-ignore = 
-override = 
+ignore =
+override =
 
+[url_params]
+
+[editor]
+editor_ignore =
