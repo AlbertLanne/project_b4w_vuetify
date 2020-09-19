@@ -1,12 +1,9 @@
 <!-- PROJECT LOGO -->
 <br />
-<p align="center">
     <img src="https://i.imgur.com/SPjbbFJ.jpg" alt="Logo" width="full" height="auto">
 
-  <h3 align="center">Mysql Production Monitoring</h3>
-
+  <h3 align="center">Project b4w with vuetify</h3>
   <p align="center">
-    project_b4w_vuetify
     <br />
     <br />
     <br />
@@ -16,7 +13,6 @@
     ·
     <a href="https://github.com/blend3dweb/project_b4w_vuetify/pulls">Request Feature</a>
   </p>
-</p>
 
 
 
