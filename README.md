@@ -1,7 +1,33 @@
-# project_b4w_vuetify
-Vue.js (vuetify) and Blend4Web (blender 2.79)
+<!-- PROJECT LOGO -->
+<br />
+<p align="center">
+    <img src="https://i.imgur.com/SPjbbFJ.jpg" alt="Logo" width="full" height="auto">
 
-EN
+  <h3 align="center">Mysql Production Monitoring</h3>
+
+  <p align="center">
+    project_b4w_vuetify
+    <br />
+    <br />
+    <br />
+    <a href="https://blend3dweb.ru/projects/dev/blend3dweb_test_vue/blend3dweb_test_vue.html">View Demo</a>
+    ·
+    <a href="https://github.com/blend3dweb/project_b4w_vuetify/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/blend3dweb/project_b4w_vuetify/pulls">Request Feature</a>
+  </p>
+</p>
+
+
+
+<!-- TABLE OF CONTENTS -->
+## Table of Contents
+
+* [EN](#EN)
+* [RU](#RU)
+* [FR](#FR)
+
+### EN
 
 The project was created as an experimental platform for testing vue.js and blend4web.
 Code comments will supplement general information about the project. So, let's begin..
@@ -34,7 +60,7 @@ blend3dweb@gmail.com (unless the answer is urgent)
 https://discord.gg/2mk7Hy5
 PM on the website: https://www.blend3dweb.ru/
 
-RU
+### RU
 
 Проект создан, как экспериментальная площадка для проверки работы vue.js и  blend4web.
 Комментарии к коду будут дополнять  общую информацию о проекте. Итак начнём..
@@ -66,3 +92,31 @@ RU
 blend3dweb@gmail.com (если ответ не срочный)
 https://discord.gg/2mk7Hy5
 ЛС на сайте: https://www.blend3dweb.ru/
+
+
+
+###  FR
+
+Le projet a été créé comme une plate-forme expérimentale pour tester vue.js avec blend4web. 
+Les commentaires de code compléteront les informations générales sur le projet. Alors, commençons..
+
+Programmes et conditions requises
+
+Par défaut, Manjaro OS (win10 - vous devez éssayez il aura surement des différences)
+
+Télécharger blender 2.79 (https://download.blender.org/release/Blender2.79/), télécharger et ajouter l'extension blend4web (https://www.blend4web.com/en/downloads/). Vuejs code basé sur vuetify (https://vuetifyjs.com/)
+
+Procédure
+
+Ensuite, il y a deux façons, vous pouvez télécharger ce projet et l'installer localement à côté de vos autres projets. Ou participer au développement en vous connectant au projet via github.
+
+Changez le moteur Blender Render en B4W dans Blender. Le serveur de développement (project manager) démarre et vous allez voir le chef de projet. Lorsque vous allez à la page .html, vous pouvez voir comment fonctionnent vue et blend4web. Le projet a maintenant la possibilité de changer de projet de manière dynamique sans surcharger la page.
+
+Le but de ces expériences : permettre, au technologie comme vue.sj, de travailler de manière réactive avec des objets 3d, des scènes différentes, ainsi que différents moteurs webgl.
+
+Pour la publication sur un  serveur, lisez les commentaires dans le fichier .html et modifiez les liens. Build b4w ne fonctionne pas correctement (dépendances à traiter). Pour travailler sur le serveur, vous avez besoin de tous les fichiers du dossier de construction, à l'exception du .html. 
+
+Dans un futur proche : test du code dans des fichiers .vue séparés, blocage temporaire des boutons du projet lors du chargement dynamique des scènes (recherche d'une variante de vuejs), remplacement du canvas lors du passage au menu latéral d'un autre moteur (b4w - json, verge3d / threejs - glTF).
+
+Si vous avez des questions : blend3dweb@gmail.com (sauf si c'est urgente) https://discord.gg/2mk7Hy5 PM ou sur le site : https://www.blend3dweb.ru/
+
